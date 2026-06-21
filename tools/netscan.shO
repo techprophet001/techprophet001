@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "=============================="
+echo "   TECHPROPHET NET SCANNER"
+echo "=============================="
+
+echo "Scanning local network..."
+
+# Get local IP range
+ip addr show | grep inet
+
+echo ""
+echo "Active devices (basic scan):"
+ping -c 1 8.8.8.8 > /dev/null && echo "Internet: OK" || echo "Internet: OFFLINE"
+
+echo ""
+echo "Tip: Install 'nmap' for advanced scanning"

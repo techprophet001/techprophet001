@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "=============================="
+echo "  TECHPROPHET TERMUX SETUP"
+echo "=============================="
+
+pkg update -y && pkg upgrade -y
+
+pkg install git -y
+pkg install python -y
+pkg install curl -y
+pkg install wget -y
+pkg install openssh -y
+pkg install nano -y
+pkg install openssl-tool -y
+
+echo "Setup complete!"
+
